@@ -363,15 +363,15 @@ would be the best.
 
 
 \subsubsection{\texttt{d13C} vs \texttt{scat\_species}}
-When we look at figure 24, and compare the three violin plots of Bobcat, Coyotes \& Gray Goxes, the medians of the Gray Foxes and Bobcats are similar, however
+When we look at figure 24, and compare the three violin plots of Bobcat, Coyotes \& Gray Goxes, the medians of all three violin plots are different, however
 the median of the Coyote violin plot is very different from the rest. When it comes to comparing the IQR of all three violin plots, we can deduct that the
 Coyote violin plot has the most spread, compared the IQR of both Bobcat \& Gray Fox, which appear to be similar. It can be seen that the violin plot of 
 Bobcat, has a left skew, the Coyote violin plot has no skew, and the Gray Fox violin plot has no skew either. \\
 
 \noindent With regards to statistical testing, it would be the most appropriate to use Kruskal-Wallis because \texttt{scat\_species} consists of three values
-versus a numerical variable, which \texttt{d13C}. After performing the Kruskal-Wallis test, we found that the signifigance test as true. Which has meant that
-we have rejected the null hypothesis and concluded that there is a statistically signifcant difference between atleast one of the groups. When performing the
-Kruskal-Wallis tests, it is important to note that we had applied the Bonferroni Correction to reduce the chances of any Type I error. \\
+versus a numerical variable, which is \texttt{d13C}. After performing the Kruskal-Wallis test, we found that the signifigance test as true. Which has meant 
+that we have rejected the null hypothesis and concluded that there is a statistically signifcant difference between atleast one of the groups. When performing 
+the Kruskal-Wallis tests, it is important to note that we had applied the Bonferroni Correction to reduce the chances of any Type I error. \\
 
 \noindent After performing the statistical testing, we moved on to performing a post-hoc test, where we used Dunn's test to find out which specific groups are
 different, and the results of the test are shown below: \\
@@ -392,6 +392,187 @@ different, and the results of the test are shown below: \\
     \caption{Dunn's Test p-values for d13C between species}
     \label{tab:dunn_d13C}
 \end{table}
+
+\noindent Looking at the results of the table above, we can confirm that there is a significant difference between Bobcats \& Coyotes, as well as between
+Bobcats \& Gray Foxes, however, there is  no significant difference between Coyotes \& Gray Foxes. As a result, there is significant difference between 
+Bobcats \& Coyotes and Coyotes \& Gray Foxes.
+
+\subsubsection{\texttt{d15N} vs \texttt{scat\_species}}
+When we look at figure 25, and compare the three violin plots of Bobcat, Coyotes \& Gray Foxes, the medians of Bobcats \& Gray Foxes are the same, however
+the median of the Coyote is different from others. When it comes to comparing the IQR of all three violin plots, we can deduct that the IQR of the Bobcat \&
+Gray Fox are similar, but there is a larger spread in the violin plot of Coyotes because it has a larger IQR. It can be seen that there is no skew in both
+Bobcat \& Gray Fox violin plots, however, there is right skew in the Coyote violin plot. \\
+
+\noindent With regards to statistical testing, it would be the most appropriate to use Kruskal-Wallis because \texttt{scat\_species} consists of three values
+versus a numerical variable, which is \texttt{d15N}. After performing the Kruskal-Wallis test, we found that the signifigance test as true. Which has meant 
+that we have rejected the null hypothesis and concluded that there is a statistically signifcant difference between atleast one of the groups. When performing 
+the Kruskal-Wallis tests, it is important to note that we had applied the Bonferroni Correction to reduce the chances of any Type I error. \\
+
+\noindent After performing the statistical testing, we moved on to performing a post-hoc test, where we used Dunn's test to find out which specific groups are
+different, and the results of the test are shown below: \\
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Comparison} & \textbf{Bobcat} & \textbf{Coyote} & \textbf{GrayFox} \\
+    \hline
+    Bobcat & 1.000 & 0.000 & 0.989 \\
+    \hline
+    Coyote & 0.000 & 1.000 & 0.000 \\
+    \hline
+    GrayFox & 0.989 & 0.000 & 1.000 \\
+    \hline
+    \end{tabular}
+    \caption{Dunn's Test p-values for d15N between species}
+    \label{tab:dunn_d15N}
+\end{table}
+
+\noindent Looking at the results of the table above, we can confirm that there is a significant difference between Bobcats \& Coyotes. There is no signifanct
+difference between Bobcats \& Gray Foxes, however, there is significant difference between Coyotes \& Gray Foxes. As a result, we can summarize that Coyotes,
+have a significant difference between Coyotes \& Gray Foxes.
+
+\subsubsection{\texttt{C:N Ratio} vs \texttt{scat\_species}}
+When we look at figure 26, and compare the three violin plots of Bobcat, Coyotes \& Gray Foxes, the medians of Coyotes \& Gray Foxes are all different, 
+however the median of Bobcats are very different compared to the other two. When it comes to comparing the IQR of all three violin plots, we can dedcut that 
+the IQR of the Gray Foxes are the highest, which means it has a larger spread compared to the IQR of the other two violin plots. It can be seen that there is 
+no skew in the Bobcat violin plot, however, there is a positive skew in violin plots of both Coyotes \& Gray Foxes. \\
+
+\noindent With regards to statistical testing, it would be the most appropriate to use Kruskal-Wallis because \texttt{scat\_species} consists of three values
+versus a numerical variable, which is \texttt{C:N Ratio}. After performing the Kruskal-Wallis test, we found that the signifigance test as true. Which had 
+meant that we have rejected the null hypothesis and concluded that there is a statistically signifcant difference between atleast one of the groups. When 
+performing the Kruskal-Wallis tests, it is important to note that we had applied the Bonferroni Correction to reduce the chances of any Type I error. \\
+
+\noindent After performing the statistical testing, we moved on to performing a post-hoc test, where we used Dunn's test to find out which specific groups are
+different, and the results of the test are shown below: \\
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Comparison} & \textbf{Bobcat} & \textbf{Coyote} & \textbf{GrayFox} \\
+    \hline
+    Bobcat & 1.000 & 0.000 & 0.000 \\
+    \hline
+    Coyote & 0.000 & 1.000 & 0.182 \\
+    \hline
+    GrayFox & 0.000 & 0.182 & 1.000 \\
+    \hline
+    \end{tabular}
+    \caption{Dunn's Test p-values for C:N Ratio between species}
+    \label{tab:dunn_C_N_ratio}
+\end{table}
+
+\noindent Looking at the results of the table above, we can confirm that there is a significant difference in terms of C:N Ratio between Bobcats \& Coyotes,
+as well as Bobcats \& Gray Foxes. However, there is no significant difference between Coyotes \& Gray Foxes. As a result, we can summarize that Bobcats have
+a significant difference with Coyotes \& Gray Foxes.
+
+\newpage
+
+\subsection{Categorical Morphological Features Heat Maps, Chi-Squared Test \&  Pairwise Chi-Squared Tests}
+In this section, we look at the all of the heat maps, and we justify the use of such a visualization, as well as using Chi-Squared Test and Chi-Squared Test
+as post-hoc. We justify the use of heat maps because we are comparing two variables which are categorical, hence a heatmap visualization would be the best.
+\vspace{0.5cm}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{C:/GitHub/BobcatsCoyotesFoxes/plots/heat_map_morphological_two.png} 
+\end{figure}
+
+\subsubsection{\texttt{scat\_ropey} vs \texttt{scat\_species}}
+When we look at figure 20, it can be deduced that when it comes to the scat being ropey, it can be deduced that the number of scats being ropey or not is
+evenly divided across each species. It can also be deduced that there are a high number of bob cats who have and don't have scat that is ropey compared to
+other species. \\
+
+\noindent With regards to statistical testing, it would be the most appropriate to use chi-squared because \texttt{scat\_species} consists of three values
+versus a categorical variable \texttt{scat\_ropey}. After performing the chi-squared test, we found that the signifigance test is false. Which had meant that
+we have accepted the null hypothesis in which there is no association at all between the two categorical variables. \\
+
+\subsubsection{\texttt{scat\_segmented} vs \texttt{scat\_species}}
+When we look at figure 21, we can see that bobcats have a high number of scat that is segmented compared to bobcats who don't, while it is evenly divided when
+it comes to Coyotes. When it comes to Gray Foxes, it can be deduced that there are more Gray Foxes who don't have segmented scat. Overall, the heatmap also
+shows that there is a high number of bobcats who have segmented scat and gray foxes are the least number of species that have a segmented scat. \\
+
+\noindent With regards to statistical testing, it would be the most appropriate to use chi-squared because \texttt{scat\_species} consists of three values
+versus a categorical variable \texttt{scat\_segmented}. After performing the chi-squared test, we found that the signifigance test is true. Which had meant 
+that we have rejected the null hypothesis and that there is an association between the two categorical variables. \\
+
+\noindent After performing the statistical testing, we moved on to performing a post-hoc test, where we used pair-wise chi-squared tests to find out which
+specfic groups have an association, and the results of the pairwise tests are shown below: \\
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Comparison & p-value \\
+        \hline
+        Coyote vs Bobcat & 0.0547 \\
+        Coyote vs GrayFox & 0.0958 \\
+        Bobcat vs GrayFox & 0.0001 \\
+        \hline
+    \end{tabular}
+    \caption{Chi-squared test results for species comparisons}
+    \label{tab:chi_squared_results}
+\end{table}
+
+\noindent Looking at the results of the table above, we can see that there is no significant assocation between segemented scat of Bobcat \& Coyotes. Also, 
+we see that there is no significant assocation between segmented scat of Coyotes \& Gray Foxes. However, there is a significant assocation between segemented
+scat of Bobcats \& Gray Foxes. 
+
+\subsubsection{\texttt{scat\_flat} vs \texttt{scat\_species}}
+When we look at figure 22, it can be seen that a majority of Bobcats, Coyotes \& Gray Foxes don't have flat scat. The highest number of species that don't
+have a flat scat are Bobcats, and the lowest being Gray Foxes. \\
+
+\noindent With regards to statistical testing, it would be the most appropriate to use chi-squared because \texttt{scat\_species} consists of three values
+versus a categorical variable \texttt{scat\_flat}. After performing the chi-squared test, we found that the signifigance test is true. Which had meant 
+that we have rejected the null hypothesis and that there is an association between the two categorical variables. \\
+
+\noindent After performing the statistical testing, we moved on to performing a post-hoc test, where we used pair-wise chi-squared tests to find out which
+specfic groups have an association, and the results of the pairwise tests are shown below:
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Comparison & p-value \\
+        \hline
+        Coyote vs Bobcat & 0.7150 \\
+        Coyote vs GrayFox & 0.1470 \\
+        Bobcat vs GrayFox & 0.0029 \\
+        \hline
+    \end{tabular}
+    \caption{Chi-squared test results for species comparisons}
+    \label{tab:chi_squared_results_flat}
+\end{table}
+
+\noindent Looking at the results of the table above, we can see that there is no significant assocation of flat scats between Coyotes \& Bobcats, and the same
+goes for Coyotes \& Gray Foxes. There is, however, significant assocation between Bobcats \& Gray Foxes. 
+
+\subsubsection{\texttt{scat\_scrape} vs \texttt{scat\_species}}
+When we look at figure 23, it can be again seen that a majority of Bobcats, Coyotes \& Gray Foxes don't have scrape scat. The highest number of species that
+don't have a scrape scat are Bobcats, and the lowest being Gray Foxes. \\
+
+\noindent With regards to statistical testing, it would be the most appropriate to use chi-squared because \texttt{scat\_species} consists of three values
+versus a categorical variable \texttt{scat\_ropey}. After performing the chi-squared test, we found that the signifigance test is false. Which had meant that
+we have accepted the null hypothesis in which there is no association at all between the two categorical variables. \\
+
+\newpage
+
+\begin{thebibliography}{99}
+
+    \bibitem{bobcat} California Department of Fish and Wildlife. \textit{Bobcat}. Available at: \url{https://wildlife.ca.gov/Conservation/Mammals/Bobcat#574393461-bobcat-biology}. Accessed: 2025-03-17.
+    \bibitem{coyote_diet} U.S. Forest Service. \textit{The Diet of the Coyote}. Available at: \url{https://www.fs.usda.gov/detailfull/mendocino/learning/nature-science/?cid=FSBDEV3_004458#:~:text=The%20diet%20of%20the%20coyote,sheep%2C%20cattle%2C%20and%20poultry}. Accessed: 2025-03-17.
+    \bibitem{gray_fox} California Living Museum. \textit{Gray Fox}. Available at: \url{https://calmzoo.org/blog/animals/gray-fox/}. Accessed: 2025-03-17.
+    \bibitem{population_ecology} LibreTexts. \textit{Population Ecology Research Methods}. Available at: \url{https://bio.libretexts.org/Courses/Gettysburg_College/01%3A_Ecology_for_All/09%3A_The_Ecology_of_Populations/9.02%3A_Population_Ecology_Research_Methods}. Accessed: 2025-03-17.
+    \bibitem{quadrat_transects_pitfall} Uyir. \textit{The Advantages and Disadvantages of Quadrats, Transects, and Pitfall Traps}. Available at: \url{https://www.uyir.at/explore-learn/eshaaan/the-advantages-and-disadvantages-of-quadrats-transects-and-pitfall-traps}. Accessed: 2025-03-17.
+    \bibitem{tracking_wildlife} National Aquarium. \textit{Connecting the Dots: The Science of Tracking Wildlife}. Available at: \url{https://aqua.org/stories/2022-12-05-connecting-dots-the-science-of-tracking-wildlife}. Accessed: 2025-03-17.
+    \bibitem{wlb_study} Wiley Online Library. \textit{Study on Wildlife Biology}. Available at: \url{https://nsojournals.onlinelibrary.wiley.com/doi/10.2981/wlb.00105}. Accessed: 2025-03-17.
+
+\end{thebibliography}
+
+
+
+
+
 
 
 
