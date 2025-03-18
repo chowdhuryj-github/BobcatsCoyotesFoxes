@@ -1,0 +1,11 @@
+% \begin{thebibliography}{99}
+
+%     \bibitem{bobcat} California Department of Fish and Wildlife. \textit{Bobcat}. Available at: \url{https://wildlife.ca.gov/Conservation/Mammals/Bobcat#574393461-bobcat-biology}. Accessed: 2025-03-17.
+%     \bibitem{coyote_diet} U.S. Forest Service. \textit{The Diet of the Coyote}. Available at: \url{https://www.fs.usda.gov/detailfull/mendocino/learning/nature-science/?cid=FSBDEV3_004458#:~:text=The%20diet%20of%20the%20coyote,sheep%2C%20cattle%2C%20and%20poultry}. Accessed: 2025-03-17.
+%     \bibitem{gray_fox} California Living Museum. \textit{Gray Fox}. Available at: \url{https://calmzoo.org/blog/animals/gray-fox/}. Accessed: 2025-03-17.
+%     \bibitem{population_ecology} LibreTexts. \textit{Population Ecology Research Methods}. Available at: \url{https://bio.libretexts.org/Courses/Gettysburg_College/01%3A_Ecology_for_All/09%3A_The_Ecology_of_Populations/9.02%3A_Population_Ecology_Research_Methods}. Accessed: 2025-03-17.
+%     \bibitem{quadrat_transects_pitfall} Uyir. \textit{The Advantages and Disadvantages of Quadrats, Transects, and Pitfall Traps}. Available at: \url{https://www.uyir.at/explore-learn/eshaaan/the-advantages-and-disadvantages-of-quadrats-transects-and-pitfall-traps}. Accessed: 2025-03-17.
+%     \bibitem{tracking_wildlife} National Aquarium. \textit{Connecting the Dots: The Science of Tracking Wildlife}. Available at: \url{https://aqua.org/stories/2022-12-05-connecting-dots-the-science-of-tracking-wildlife}. Accessed: 2025-03-17.
+%     \bibitem{wlb_study} Wiley Online Library. \textit{Study on Wildlife Biology}. Available at: \url{https://nsojournals.onlinelibrary.wiley.com/doi/10.2981/wlb.00105}. Accessed: 2025-03-17.
+
+% \end{thebibliography}

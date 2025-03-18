@@ -4,6 +4,7 @@
 \usepackage[a4paper,margin=0.5in]{geometry}
 \usepackage{amsmath}
 \usepackage{booktabs}
+\usepackage{float}
 \usepackage{hyperref}
 
 \title{Bobcats, Coyotes \& Foxes}
@@ -162,65 +163,238 @@ it is that we would like to reduce the likelihood of false positives when perfor
 In this section, we disucss the different visualization techniques and statistical testing methods that were performed to evaluate the relationships between
 the morphological and biogeochemical traits and species. We also determine which traits can be used to distinguish atleast one species from the rest.
 
-\subsection{A Display of All Figures}
-In this page, we attempt to display all the figures that we have been able to produce and will be up for discussion in the sections below.
+\subsection{Histograms \& Boxplots}
+In this page, we display all the histograms and box plots of all features that have missing values so that we can justify the method of imputation. 
+\vspace{0.5cm}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.9\textwidth]{C:/GitHub/BobcatsCoyotesFoxes/plots/kdeplots.png}
+    \begin{minipage}{0.63\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{C:/GitHub/BobcatsCoyotesFoxes/plots/kde_missing.png}
+    \end{minipage}
+    \vspace{0.5cm}
+    \begin{minipage}{0.63\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_missing.png}
+    \end{minipage}
 \end{figure}
 
 
 
-% \subsection{The Feature Description Table}
-% The details of the features in the table are presented below. Such features are divided accordingly. \\
-% \begin{table}[h]
-%     \centering
-%     \begin{tabular}{|c|c|c|c|} 
-%         \hline
-%         \textbf{Feature Names} & \textbf{Feature Types} & \textbf{Feature Names} & \textbf{Feature Types} \\ 
-%         \hline
-%         scat\_species & Not a Trait & scat\_age & Morphological \\ 
-%         \hline
-%         scat\_month & Contextual & scat\_number & Morphological \\ 
-%         \hline
-%         scat\_year & Contextual & scat\_length\_cm & Morphological \\ 
-%         \hline
-%         scat\_site & Contextual & scat\_diameter\_mm & Morphological \\ 
-%         \hline
-%         scat\_location & Contextual & scat\_taper\_mm & Morphological \\ 
-%         \hline
-%         scat\_taper\_index & Morphological & scat\_mass\_grams & Morphological \\ 
-%         \hline
-%         d13C & Biogeochemical & scat\_ropey & Morphological \\ 
-%         \hline
-%         d15N & Biogeochemical & scat\_segmented & Morphological \\ 
-%         \hline
-%         C:N Ratio & Biogeochemical & scat\_flat & Morphological \\ 
-%         \hline
-%         scat\_scrape & Morphological & & \\ 
-%         \hline
-%     \end{tabular}
-%     \caption{A Categorized Table of Features}
-%     \label{tab:4_columns}
-% \end{table}
+\newpage
+
+\subsection{The Feature Description Table}
+In this section, we created a table that categorizes each variable in the data set as morphological, biogeochemical, contextual or not a trait. \\
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|} 
+        \hline
+        \textbf{Feature Names} & \textbf{Feature Types} & \textbf{Feature Names} & \textbf{Feature Types} \\ 
+        \hline
+        scat\_species & Not a Trait & scat\_age & Morphological \\ 
+        \hline
+        scat\_month & Contextual & scat\_number & Morphological \\ 
+        \hline
+        scat\_year & Contextual & scat\_length\_cm & Morphological \\ 
+        \hline
+        scat\_site & Contextual & scat\_diameter\_mm & Morphological \\ 
+        \hline
+        scat\_location & Contextual & scat\_taper\_mm & Morphological \\ 
+        \hline
+        scat\_taper\_index & Morphological & scat\_mass\_grams & Morphological \\ 
+        \hline
+        d13C & Biogeochemical & scat\_ropey & Morphological \\ 
+        \hline
+        d15N & Biogeochemical & scat\_segmented & Morphological \\ 
+        \hline
+        C:N Ratio & Biogeochemical & scat\_flat & Morphological \\ 
+        \hline
+        scat\_scrape & Morphological & & \\ 
+        \hline
+    \end{tabular}
+    \caption{A Categorized Table of Features}
+    \label{tab:4_columns}
+\end{table}
+
+\subsection{Imputations of Missing Value}
+In this section, we look at the kernel denstiy estimation plots and the box plots to justify our reasons for the method of imputation between mean or median 
+for each of the features that have missing values.
+
+\subsubsection{Method of Imputation for \texttt{scat\_diameter\_mm}}
+For this feature, if we were look at Figure 1, we can see that the histogram has a unimodal peak, and the peak is at the center of the histogram. This also
+means that there is no skew at all. In Figure 8, we can see a box plot that has very few outliers and shows no skew at all too. As a result, we can say that
+the feature is normally distributed, hence it should have imputations using the mode.
+
+\subsubsection{Method of Imputation for \texttt{scat\_taper\_mm}, \texttt{scat\_taper\_index}, \texttt{scat\_mass\_grams}, \texttt{d13C}, \texttt{d15N} \& 
+\texttt{C:N Ratio}}
+For these following features, if we were to look at figures 2 to 7, we can see that each of them have a histrogram with a single peak, making it unimodal,
+and those peaks are shifted to the left, which means that the histograms are skewed to the right.  Furthermore, when we look at the boxplots from figures
+9 to 14, we can evidently see the skew, and we can also the see the huge number of outliers in figures 12 to 14. As a result, we can impute the missing values
+of these features with the median.
 
 \newpage
 
+\subsection{Numerical Morphological Features Box Plots, Kruskal-Wallis \& Dunn Testing}
+In this section, we look at all of the box plots, and we justify the use of such a visualization, as well as using Kruskal-Wallis and Dunn Testing as post-hoc.
+We justify the use of box plots because we are comparing two variables which are categorical and numerical, hence a box plot  visualization would be the best.
+\vspace{0.5cm}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_morphological_one.png} 
+\end{figure}
 
 \newpage
 
-\begin{thebibliography}{99}
+\subsubsection{\texttt{scat\_diameter\_mm} vs \texttt{scat\_species}}
+When we look at figure 15, and compare the three box plots of Bobcat, Coyotes \& Foxes, we can evidently say that the medians between Gray Fox is different
+compared to Bobcat \& Coyote, which suggests that the central tendency of the \texttt{scat\_diameter\_mm} is different across all three species. Furthermore, 
+judging by the IQR spread of Bobcats \& Coyotes, we can say that they both have more variablility than Gray Foxes. It is worth noting that none of the 
+boxplots have any outliers, which means that the data within those species is consistent. For Bobcats, we can say that the box plot has a positive skew, and 
+for Coyotes, we can say that the box plot has no skew, and for Gray Foxes, the box plot has a negative skew. \\
 
-    \bibitem{bobcat} California Department of Fish and Wildlife. \textit{Bobcat}. Available at: \url{https://wildlife.ca.gov/Conservation/Mammals/Bobcat#574393461-bobcat-biology}. Accessed: 2025-03-17.
-    \bibitem{coyote_diet} U.S. Forest Service. \textit{The Diet of the Coyote}. Available at: \url{https://www.fs.usda.gov/detailfull/mendocino/learning/nature-science/?cid=FSBDEV3_004458#:~:text=The%20diet%20of%20the%20coyote,sheep%2C%20cattle%2C%20and%20poultry}. Accessed: 2025-03-17.
-    \bibitem{gray_fox} California Living Museum. \textit{Gray Fox}. Available at: \url{https://calmzoo.org/blog/animals/gray-fox/}. Accessed: 2025-03-17.
-    \bibitem{population_ecology} LibreTexts. \textit{Population Ecology Research Methods}. Available at: \url{https://bio.libretexts.org/Courses/Gettysburg_College/01%3A_Ecology_for_All/09%3A_The_Ecology_of_Populations/9.02%3A_Population_Ecology_Research_Methods}. Accessed: 2025-03-17.
-    \bibitem{quadrat_transects_pitfall} Uyir. \textit{The Advantages and Disadvantages of Quadrats, Transects, and Pitfall Traps}. Available at: \url{https://www.uyir.at/explore-learn/eshaaan/the-advantages-and-disadvantages-of-quadrats-transects-and-pitfall-traps}. Accessed: 2025-03-17.
-    \bibitem{tracking_wildlife} National Aquarium. \textit{Connecting the Dots: The Science of Tracking Wildlife}. Available at: \url{https://aqua.org/stories/2022-12-05-connecting-dots-the-science-of-tracking-wildlife}. Accessed: 2025-03-17.
-    \bibitem{wlb_study} Wiley Online Library. \textit{Study on Wildlife Biology}. Available at: \url{https://nsojournals.onlinelibrary.wiley.com/doi/10.2981/wlb.00105}. Accessed: 2025-03-17.
+\noindent With regards to statistical testing, it would be the most appropriate to use Kruskal-Wallis because \texttt{scat\_species} consists of three values
+versus a numerical variable,which is \texttt{scat\_diameter\_mm}. After performing the Kruskal-Wallis test, we found that the test signifigance was true,
+which had meant that we rejected the null hypothesis and concluded that there is a statistically significant difference between atleast one of the groups.
+When performing the Kruskal-Wallis test, it is important to note that we had applied Bonferroni Correction to reduce the chances of any Type I error. \\
 
-\end{thebibliography}
+\noindent After performing the statistical testing, we moved on to performing a post-hoc test, where we we used Dunn's test to find out which specific 
+groups are different, and the results of the test are shown below: \\
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Comparison} & \textbf{Bobcat} & \textbf{Coyote} & \textbf{GrayFox} \\
+    \hline
+    Bobcat & 1.000 & 0.208 & 0.001 \\
+    Coyote & 0.208 & 1.000 & 0.000 \\
+    GrayFox & 0.001 & 0.000 & 1.000 \\
+    \hline
+    \end{tabular}
+    \caption{Dunn's Test p-values for \texttt{scat\_diameter\_mm} between Species}
+    \label{tab:dunn_test_results}
+\end{table}
+
+\noindent Looking at the results of the table above, we can say that the Bobcats \& Coyotes don't show a significant different in scat diameter. Bobcats 
+\& Gray Foxes show a significant difference in scat diameter and Coyotes \& Gray Foxes also show a significant difference in diamater. In conclusion, we can
+say that the scat diamater of Gray Foxes is different from both Bobcats \& Coyotes, but there is no signifcant difference between Bobcats \& Coyotes. \\
+
+\subsubsection{\texttt{scat\_length\_cm} vs \texttt{scat\_species}}
+When we look at figure 16, and compare the three box plots of Bobcat, Coyotes \& Gray Foxes, we can evidently say that the medians between all three are very 
+similar, which suggests that the central tendency of the \texttt{scat\_length\_cm} has little to no difference in the central values of the numerical variable
+across all categories. The IQR of Gray Fox is smaller than Bobcats \& Coyotes, which suggests that Gray Foxes have less variability than the other two. It is
+also worth noting that there are very few outliers in the box plots, which means that the data is consistent. It also appears that all box plots have no skew,
+making them symmetrical. \\
+
+\noindent With regards to statistical testing, it would be the most appropriate to use Kruskal-Wallis because \texttt{scat\_species} consists of three values
+versus a numerical variable, which is \texttt{scat\_length\_cm}. After performing the Kruskal-Wallis test, we found that the test signfigance was false. Which
+had meant that we had accepted the null hypothesis and concluded that there is no statistically significant difference between atleast one of the groups. 
+When performing the Kruskal-Wallis test, it is important to note that we had applied bonferroni correction to reduce the chances of any Type I error. \\
+
+\subsubsection{\texttt{scat\_mass\_grams} vs \texttt{scat\_species}}
+When we look at figure 17, and compare the three box plots of Bobcat, Coyotes \& Gray Foxes, we can see that the medians of the box plots of Bobcat \&
+Coyotes are similar, however the median of the Gray Fox is different from the rest. The IQR of the Bobcats \& Coyotes are larger than the IQR of Gray Foxes,
+which means that it has more variability. All three box plots have very few outliers, which means that the data is consistent across all three. It would also
+be fair to assume that there is no skew in all three box plots, as they appear to be symmetrical. \\
+
+\noindent With regards to statistical testing, it would be the most appropriate to use Kruskal-Wallis because \texttt{scat\_species} consists of three values
+versus a numerical variable, which is \texttt{scat\_mass\_grams}. After performing the Kruskal-Wallis test, we found that the signifigance test was true. 
+Which had meant that we had rejected the null hypothesis and concluded that there is a statistically significant difference between atleast one of the groups.
+When performing the Kruskal-Wallis test, it is important to note that we had applied Bonferroni Correction to reduce the chances of any Type I error. \\
+
+\noindent After performing the statistical testing, we moved on to performing a post-hoc test, where we used Dunn's test to find out which specific groups are
+different, and the results of the test are shown below: \\
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Comparison} & \textbf{Bobcat} & \textbf{Coyote} & \textbf{GrayFox} \\
+    \hline
+    Bobcat & 1.000 & 0.078 & 0.000 \\
+    \hline
+    Coyote & 0.078 & 1.000 & 0.000 \\
+    \hline
+    GrayFox & 0.000 & 0.000 & 1.000 \\
+    \hline
+    \end{tabular}
+    \caption{Dunn's Test p-values for scat\_mass\_grams between species}
+    \label{tab:dunn_scat_mass}
+\end{table}
+
+\noindent Looking at the results of the table above, we can say that there is no significant difference in scat mass between Bobcats \& Coyotes. We can also
+say that there is a significant difference between Bobcats \& Gray Foxes, and there is a significant difference between Coyotes \& Gray Foxes. There is no
+difference in scat mass between Bobcats \& Coyotes. As a result, it is the Gray Foxes that has a significant difference in scat mass with other species.
+
+\subsubsection{\texttt{scat\_taper\_mm} vs \texttt{scat\_species}}
+When we look at figure 18, and compare the three box plots of Bobcat, Coyotes \& Gray Foxes, we can see that the medians of the box plots of all three are
+similar. The IQR of all three box plots are similar, which suggests that all three categories have similar variability. All three box plots also have very 
+few outliers, which means that the data is consistent across all three. While the Bobcat box plot has no skew, we can deduce that the Coyote box plot has a 
+positive skew, and the Gray Fox box plot has a negative skew. \\
+
+\noindent With regards to statistical testing, it would be the most appropriate to use Kruskal-Wallis because \texttt{scat\_species} consists of three values
+versus a numerical variable, which is \texttt{scat\_taper\_mm}. After performing the Kruskal-Wallis test, we found that the signifigance test was false.
+Which had meant that we had accepted the null hypothesis and concluded that there no statistically signficant difference between atleast one of the groups.
+When performing the Kruskal-Wallis test, it is important to note that we had applied Bonferroni Correction to reduce the chances of any Type I error. 
+
+\subsubsection{\texttt{scat\_taper\_index} vs \texttt{scat\_species}}
+When we look at figure 19, and compare the three box plots of Bobcat, Coyotes \& Gray Foxes, we can see that the medians of the box plots of all three are
+similar. The IQR of all three box plots are similar, although the IQR of the Coyote box plots seems a little  smaller, however, this overall indicates that
+all three categories have similar variability. All three box plots have few outliers, which means that the data is consistent across all three categories.
+It can also be seen that alll three box plots have no skew. \\
+
+\noindent With regards to statistical testing, it would be the most appropriate to use Kruskal-Wallis because \texttt{scat\_species} consists of three values
+versus a numerical variable, which is \texttt{scat\_taper\_index}.  After performing the Kruskal-Wallis test, we found that the signifigance test was false.
+Which had meant that we had accepted the null hypothesis and concluded that there no statistically signficant difference between atleast one of the groups.
+When performing the Kruskal-Wallis test, it is important to note that we had applied Bonferroni Correction to reduce the chances of any Type I error. \\
+
+\newpage
+
+\subsection{Numerical Biogeochemical Features Box Plots, Kruskal-Wallis \& Dunn Testing}
+In this section, we look at all of the violin plots, and we justify the use of such a visualization, as well as using Kruskal-Wallis and Dunn Testing as 
+post-hoc. We justify the use of violin plots because we are comparing two variables which are categorical and numerical, hence a violin plot visualization 
+would be the best.
+\vspace{0.5cm}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{C:/GitHub/BobcatsCoyotesFoxes/plots/violin_plot_biogeochemical.png} 
+\end{figure}
+
+
+
+\subsubsection{\texttt{d13C} vs \texttt{scat\_species}}
+When we look at figure 24, and compare the three violin plots of Bobcat, Coyotes \& Gray Goxes, the medians of the Gray Foxes and Bobcats are similar, however
+the median of the Coyote violin plot is very different from the rest. When it comes to comparing the IQR of all three violin plots, we can deduct that the
+Coyote violin plot has the most spread, compared the IQR of both Bobcat \& Gray Fox, which appear to be similar. It can be seen that the violin plot of 
+Bobcat, has a left skew, the Coyote violin plot has no skew, and the Gray Fox violin plot has no skew either. \\
+
+\noindent With regards to statistical testing, it would be the most appropriate to use Kruskal-Wallis because \texttt{scat\_species} consists of three values
+versus a numerical variable, which \texttt{d13C}. After performing the Kruskal-Wallis test, we found that the signifigance test as true. Which has meant that
+we have rejected the null hypothesis and concluded that there is a statistically signifcant difference between atleast one of the groups. When performing the
+Kruskal-Wallis tests, it is important to note that we had applied the Bonferroni Correction to reduce the chances of any Type I error. \\
+
+\noindent After performing the statistical testing, we moved on to performing a post-hoc test, where we used Dunn's test to find out which specific groups are
+different, and the results of the test are shown below: \\
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Comparison} & \textbf{Bobcat} & \textbf{Coyote} & \textbf{GrayFox} \\
+    \hline
+    Bobcat & 1.000 & 0.000 & 0.160 \\
+    \hline
+    Coyote & 0.000 & 1.000 & 0.010 \\
+    \hline
+    GrayFox & 0.160 & 0.010 & 1.000 \\
+    \hline
+    \end{tabular}
+    \caption{Dunn's Test p-values for d13C between species}
+    \label{tab:dunn_d13C}
+\end{table}
+
+
+
 
 \end{document}
 
