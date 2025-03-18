@@ -21,23 +21,23 @@
 
 \section{Introduction}
 This paper is for a midterm project dedicated towards replicating the results from a paper on a morphometric modeling approach to distinguishing among
-bobcat, coyote, and gray fox scats. This midterm project requires determining the best approach for addressing research questions as shown in Section 1.2.
+bobcat, coyote, and gray fox scats. This midterm project requires determining the best approach for addressing research questions as shown in Section 1.2. \\
 
-Understanding the distribution and behavior of various species is fundamental to ecology, as it helps ecologists understand the relationship between
+\noindent Understanding the distribution and behavior of various species is fundamental to ecology, as it helps ecologists understand the relationship between
 organsims and their environments. There is a lot ecological signifigance behind tracking such species, as researchers can see precisely when individual 
 animals depart from one location and arrive at another. Such insights reveal a individual animal's seasonal movements, feeding locations and more. Such
 information is valuable because the more ecologists know about animals' seasonal usage of habitats, the more they can protect the areas the animals need to
-survive.
+survive. \\
 
-Given that adult Gray Foxes have a greater average body length than adult Bobcats, and a smaller average body length than adult Coyotes, we hypothesize 
+\noindent Given that adult Gray Foxes have a greater average body length than adult Bobcats, and a smaller average body length than adult Coyotes, we hypothesize 
 that Gray Fox scat will exhibit a significantly larger average diameter than Bobcat scat, but a smaller average diameter than Coyote scat.
 
 \subsection{Background Information}
 Conservation exologists monitor species populations to assess the health of the ecosystem and just how effective conservation strategies are. While there are
 several methods for estimating population sizes, such as mark-recapture and camera-trap surveys, an alternative approach to this is analyzing biological 
-remnants such as scat, as performed by Dr. Reid.
+remnants such as scat, as performed by Dr. Reid. \\
 
-In a 2015 study by Dr. Rachel Reid, Reid had investigated whether morphologica, biogeochemical and contextual traits distinguish between bobcat, coyote and
+\noindent In a 2015 study by Dr. Rachel Reid, Reid had investigated whether morphological, biogeochemical and contextual traits distinguish between bobcat, coyote and
 fox scat. Morphological traits are the most cost-effective for field identification, while biogeochemical traits require laboratory analysis. 
 
 \subsection{The Research Questions}
@@ -89,6 +89,123 @@ A transect is a straight line that cuts through a natural landscape so that stan
 transects are it is quick, inexpensive and portable. A disadvantage of transects is that it is often used in inapproriate situations, so care must be taken 
 when deciding whether or not to use a transect.
 
+\subsection{Dataset Description}
+With regards to the dataset used for perfoming data pre-processing, statistical and visualization techniques, it consists of 110 observations and 19 features.
+The features are of two different data types, such as \texttt{categorical}, \texttt{int64} and \texttt{float64}. This is a small dataset, and some of the 
+features have null values, which are \texttt{scat\_taper\_mm}, \texttt{scat\_taper\_index}, \texttt{scat\_mass\_grams}, \texttt{d13C}, \texttt{d15N} and 
+\texttt{CN Ratio}.
+
+\newpage
+
+\section{Methods}
+In this section, we discuss how we cleaned the dataset, including handling of missing values, data type conversions, and any transformations that we applied.
+We will also justify any decisions made about outlier treatment (removal, transformation or retention). Moreover, we look at the different statistical and
+visualization techniques we've used in this paper and why such approaches were appropriate.
+
+\subsection{Data Type Conversion}
+Looking at the dataset, we needed to understand what the features were about. We needed to know what the units were, what the features mean, as well as the 
+description of the features. We renamed the columns to indicate some clarity as to what the feature was about, and we also renamed some numerical features
+to indicate what the unit of that feature was. After using \texttt{.info()} to look at the data type of each feature, we could see that some of the features
+were incorrectly represented as \texttt{int64} or \texttt{object}. For features that have binary values, or features that were missrepresented as 
+\texttt{object} we converted them into \texttt{category} using \texttt{.astype()}.
+
+\subsection{Imputing or Dropping?}
+When we looked at the size of the dataset, we saw that it was 19 features in total and about 110 observations. In the context of machine learning 
+applications, such a dataset is too small to drop any observations that have any missing values. Instead, we chose to impute. When it came to performing
+imputations, we needed to decide between the mean and median method if imputation for feature. The reasoning behind each method of imputation is as follows:
+
+\begin{itemize}
+    \item \textbf{Mean:} we use the mean for numerical features that are normally distributed
+    \item \textbf{Median:} we use the median for numerical features that are skewed and contain outliers
+\end{itemize}
+
+\noindent In order to figure out whether a feature is normally distributed or skewed, we need to use data visualization. For situation, we can plot a kernel
+density estimation plot for each of the features as well as box plot.
+
+\subsection{Visualization Tehcniques}
+When it came to performing visualization techniques, we had to set a response variable, which was \texttt{scat\_species}. Given that the response variable
+was categorical, this means we performed our visualizations according to the following rules:
+
+\begin{itemize}
+    \item \textbf{Categorical vs Numerical:} for plotting a categorical feature against numerical features, we explored using either box plots or violin plots
+    \item \textbf{Categorical vs Categorical:} for plotting a categorical feature against categorical features, we explored using heat maps
+\end{itemize}
+
+\noindent The visualizations were performed as we compared the response variable against features from both morphological and biogeochemical traits.
+
+\subsection{Statistical Testing Tehcniques}
+When it came to performing statistical testing, we used our previously set response variable which was categorical against a number of categorical and
+numerical features, this means we performing our statistical testing according to the following rules:
+
+\begin{itemize}
+    \item \textbf{Kruskal-Wallis:} for comparing a categorical variable with multiple values against a numerical variable, it answers the question of whether
+    atleast one group defined by the categorical variable differs from at-least one other.
+    \item \textbf{$\chi^2$ Test of Independence:} it is a hypothesis test for comparing two categorical variables and measures whether there is a 'dependence' 
+    between them
+    \item \textbf{Dunn Testing:} used as a post-hoc analysis after a Kruskal-Wallis test to identify which specific groups are significantly different from
+    each other.
+\end{itemize}
+
+\noindent The statistical tests were performed as we compared the response variables against features from both morphological and biogeochemical traits. The 
+justification for all statistical tests and visualizations were all dependent on the type of variable we were dealing against the response variable, and this
+will be explained in further detail in Section 3.
+
+\subsection{Family-Wise Error Rate}
+When it came to determining the family-wise error rate method for each of the tests, we decided to go with bonferroni correction. It is a multiple comparision
+adjustment method that reduces the signifigance level to control for false positives when performing multiple hypothesis tests. The justification behind using
+it is that we would like to reduce the likelihood of false positives when performing multiple comparisions. 
+
+
+\newpage
+
+\section{Results}
+In this section, we disucss the different visualization techniques and statistical testing methods that were performed to evaluate the relationships between
+the morphological and biogeochemical traits and species. We also determine which traits can be used to distinguish atleast one species from the rest.
+
+\subsection{A Display of All Figures}
+In this page, we attempt to display all the figures that we have been able to produce and will be up for discussion in the sections below.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{C:/GitHub/BobcatsCoyotesFoxes/plots/kdeplots.png}
+\end{figure}
+
+
+
+% \subsection{The Feature Description Table}
+% The details of the features in the table are presented below. Such features are divided accordingly. \\
+% \begin{table}[h]
+%     \centering
+%     \begin{tabular}{|c|c|c|c|} 
+%         \hline
+%         \textbf{Feature Names} & \textbf{Feature Types} & \textbf{Feature Names} & \textbf{Feature Types} \\ 
+%         \hline
+%         scat\_species & Not a Trait & scat\_age & Morphological \\ 
+%         \hline
+%         scat\_month & Contextual & scat\_number & Morphological \\ 
+%         \hline
+%         scat\_year & Contextual & scat\_length\_cm & Morphological \\ 
+%         \hline
+%         scat\_site & Contextual & scat\_diameter\_mm & Morphological \\ 
+%         \hline
+%         scat\_location & Contextual & scat\_taper\_mm & Morphological \\ 
+%         \hline
+%         scat\_taper\_index & Morphological & scat\_mass\_grams & Morphological \\ 
+%         \hline
+%         d13C & Biogeochemical & scat\_ropey & Morphological \\ 
+%         \hline
+%         d15N & Biogeochemical & scat\_segmented & Morphological \\ 
+%         \hline
+%         C:N Ratio & Biogeochemical & scat\_flat & Morphological \\ 
+%         \hline
+%         scat\_scrape & Morphological & & \\ 
+%         \hline
+%     \end{tabular}
+%     \caption{A Categorized Table of Features}
+%     \label{tab:4_columns}
+% \end{table}
+
+\newpage
 
 
 \newpage
@@ -101,9 +218,8 @@ when deciding whether or not to use a transect.
     \bibitem{population_ecology} LibreTexts. \textit{Population Ecology Research Methods}. Available at: \url{https://bio.libretexts.org/Courses/Gettysburg_College/01%3A_Ecology_for_All/09%3A_The_Ecology_of_Populations/9.02%3A_Population_Ecology_Research_Methods}. Accessed: 2025-03-17.
     \bibitem{quadrat_transects_pitfall} Uyir. \textit{The Advantages and Disadvantages of Quadrats, Transects, and Pitfall Traps}. Available at: \url{https://www.uyir.at/explore-learn/eshaaan/the-advantages-and-disadvantages-of-quadrats-transects-and-pitfall-traps}. Accessed: 2025-03-17.
     \bibitem{tracking_wildlife} National Aquarium. \textit{Connecting the Dots: The Science of Tracking Wildlife}. Available at: \url{https://aqua.org/stories/2022-12-05-connecting-dots-the-science-of-tracking-wildlife}. Accessed: 2025-03-17.
+    \bibitem{wlb_study} Wiley Online Library. \textit{Study on Wildlife Biology}. Available at: \url{https://nsojournals.onlinelibrary.wiley.com/doi/10.2981/wlb.00105}. Accessed: 2025-03-17.
 
-
-    
 \end{thebibliography}
 
 \end{document}

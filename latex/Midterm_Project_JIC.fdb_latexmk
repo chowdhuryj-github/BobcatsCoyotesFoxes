@@ -1,5 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1742253651.07466 "c:/GitHub/BobcatsCoyotesFoxes/latex/Midterm_Project_JIC.tex" "Midterm_Project_JIC.pdf" "Midterm_Project_JIC" 1742253652.00279 0
+["pdflatex"] 1742313023.81678 "c:/GitHub/BobcatsCoyotesFoxes/latex/Midterm_Project_JIC.tex" "Midterm_Project_JIC.pdf" "Midterm_Project_JIC" 1742313025.0701 0
+  "C:/GitHub/BobcatsCoyotesFoxes/plots/kdeplots.png" 1742261507 125655 7a1ceaff3c83885ce87c594dd0283c25 ""
   "C:/Users/chowdhuryj/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1741138844 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/chowdhuryj/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1739155089 11548 f49887ef89b7ed0788c6124f7adb9cf1 ""
   "C:/Users/chowdhuryj/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1737942959 12015813 cd1a156d53829aef9f4414cbc622121f ""
@@ -79,11 +80,11 @@
   "C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Midterm_Project_JIC.aux" 1742253651 1797 f19ca2b75eef57d39652cad270ea8138 "pdflatex"
-  "Midterm_Project_JIC.out" 1742253651 2579 73da126cf38643379204d1a9c721c041 "pdflatex"
-  "Midterm_Project_JIC.tex" 1742253649 8421 0ce627c79ff89822fc03ded218779964 ""
-  "Midterm_Project_JIC.toc" 1742253651 1056 2a3e2f6c13b6892827f7e98b9797aa24 "pdflatex"
-  "c:/GitHub/BobcatsCoyotesFoxes/latex/Midterm_Project_JIC.tex" 1742253649 8421 0ce627c79ff89822fc03ded218779964 ""
+  "Midterm_Project_JIC.aux" 1742313024 2937 03f2eb1289e243dba6e995dc99fa9ede "pdflatex"
+  "Midterm_Project_JIC.out" 1742313024 3985 d6937766aba07557f9057911976c1b20 "pdflatex"
+  "Midterm_Project_JIC.tex" 1742313021 15944 d8aff86af68c04bcc0069a30b596e051 ""
+  "Midterm_Project_JIC.toc" 1742313024 1804 7fedc095ce2320ebd89f9d16be5bdcc8 "pdflatex"
+  "c:/GitHub/BobcatsCoyotesFoxes/latex/Midterm_Project_JIC.tex" 1742313021 15944 d8aff86af68c04bcc0069a30b596e051 ""
   (generated)
   "Midterm_Project_JIC.aux"
   "Midterm_Project_JIC.log"
