@@ -134,6 +134,7 @@ INPUT C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy
 INPUT C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\chowdhuryj\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\Midterm_Project_JIC.toc
@@ -144,7 +145,6 @@ INPUT C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfont
 INPUT C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 OUTPUT Midterm_Project_JIC.toc
-INPUT C:\Users\chowdhuryj\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT C:\GitHub\BobcatsCoyotesFoxes\plots\kde_missing.png

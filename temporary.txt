@@ -9,3 +9,11 @@
 %     \bibitem{wlb_study} Wiley Online Library. \textit{Study on Wildlife Biology}. Available at: \url{https://nsojournals.onlinelibrary.wiley.com/doi/10.2981/wlb.00105}. Accessed: 2025-03-17.
 
 % \end{thebibliography}
+
+scat_diameter_mm
+scat_mass_grams
+scat_segmented	
+scat_flat	
+d13C
+d15N	
+C:N Ratio

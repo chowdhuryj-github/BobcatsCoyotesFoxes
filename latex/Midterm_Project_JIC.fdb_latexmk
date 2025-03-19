@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1742334562.05095 "c:/GitHub/BobcatsCoyotesFoxes/latex/Midterm_Project_JIC.tex" "Midterm_Project_JIC.pdf" "Midterm_Project_JIC" 1742334585.35073 0
+["pdflatex"] 1742351410.77208 "c:/GitHub/BobcatsCoyotesFoxes/latex/Midterm_Project_JIC.tex" "Midterm_Project_JIC.pdf" "Midterm_Project_JIC" 1742351437.94501 0
   "C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_missing.png" 1742334093 598471 e6436cbf91c7e95f86fdae6e0100b16c ""
   "C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_morphological_one.png" 1742334115 1769299 b5f139ea1f7dff2b23e4558caec25556 ""
   "C:/GitHub/BobcatsCoyotesFoxes/plots/heat_map_morphological_two.png" 1742334122 262546 b3a10fdd209a34bf1de44cb183a43520 ""
@@ -85,11 +85,11 @@
   "C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Midterm_Project_JIC.aux" 1742334584 8339 8be07725bbe5a3b4b868051824001535 "pdflatex"
-  "Midterm_Project_JIC.out" 1742334584 9339 cf6d1a417d97f8ac6a6684af99798483 "pdflatex"
-  "Midterm_Project_JIC.tex" 1742334538 40490 3c9b5438c5d283bcac359f2628e3e946 ""
-  "Midterm_Project_JIC.toc" 1742334584 4313 2bf424946ed4e315a0edb6599f6c4352 "pdflatex"
-  "c:/GitHub/BobcatsCoyotesFoxes/latex/Midterm_Project_JIC.tex" 1742334538 40490 3c9b5438c5d283bcac359f2628e3e946 ""
+  "Midterm_Project_JIC.aux" 1742351437 11239 fe2514b31a2b20f3c4013aa6fb6f645b "pdflatex"
+  "Midterm_Project_JIC.out" 1742351437 12729 21cf608d665c491147ff31db4e0df44c "pdflatex"
+  "Midterm_Project_JIC.tex" 1742351409 52247 23bbc0b3942bfc7bf01387b7b5fd1c09 ""
+  "Midterm_Project_JIC.toc" 1742351437 5768 0a0dd1e6b65af35635099377df4ceb0a "pdflatex"
+  "c:/GitHub/BobcatsCoyotesFoxes/latex/Midterm_Project_JIC.tex" 1742351409 52247 23bbc0b3942bfc7bf01387b7b5fd1c09 ""
   (generated)
   "Midterm_Project_JIC.aux"
   "Midterm_Project_JIC.log"

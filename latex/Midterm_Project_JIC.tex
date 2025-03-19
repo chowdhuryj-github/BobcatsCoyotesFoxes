@@ -17,8 +17,10 @@
 \setlength{\textfloatsep}{5pt} 
 
 \maketitle
+
+\newpage 
 \tableofcontents
-\newpage
+\newpage  
 
 \section{Introduction}
 This paper is for a midterm project dedicated towards replicating the results from a paper on a morphometric modeling approach to distinguishing among
@@ -95,6 +97,23 @@ With regards to the dataset used for perfoming data pre-processing, statistical 
 The features are of two different data types, such as \texttt{categorical}, \texttt{int64} and \texttt{float64}. This is a small dataset, and some of the 
 features have null values, which are \texttt{scat\_taper\_mm}, \texttt{scat\_taper\_index}, \texttt{scat\_mass\_grams}, \texttt{d13C}, \texttt{d15N} and 
 \texttt{CN Ratio}.
+
+\subsection{Morphological \& Biogeochemical Traits of Bobcat Scat}
+When it comes to looking at the morphological features, a Bobcat's scat appears black or brown. It's shape is tubular and looks like a long string. It is
+about three to five inches long with blunt ends. Their scat differs from Coyote Scat as a coyote's scat is long, curly and tapered at the ends. When it comes
+to biogeochemical composition of Bobcat Scat, the scat has a C:N ratio from 5 to 10. Such features are useful as they allow ecologists to differentiate between
+the scats of different animals.
+
+\subsection{Morphological \& Biogeochemical Traits of Coyote Scat}
+When it comes to looking at the morphological features, a Coyote's scat appears like a twisted rope, and may be tapered at one end. It is firm, and the color
+and consistency depend on the coyote's most recent diet. To different a Coyote's scat from a Fox's scat, a fox scat is measured about 2-3 inches in length,
+with a noticceable tapered end. It is possible to see bone fragments and hair in the fox scat.  When it comes to biogeochemical composition, the scat has a 
+C:N ratio from 5 to 15.
+
+\subsection{Morphological \& Biogeochemical Traits of Gray Fox Scat}
+When it comes to looking at morphological features, a Gray Fox's scat appears as brown or black in color, and has a twisted, rope-like appearance. The size 
+and shape of the scat is about 2-3 inches long. Fox scat can contain a variety of materials, such as seeds \& berries. When it comes to the geochemical
+composition, the C:N ratio of a Gray Fox scat ranges from 0 to 30. 
 
 \newpage
 
@@ -395,7 +414,7 @@ different, and the results of the test are shown below: \\
 
 \noindent Looking at the results of the table above, we can confirm that there is a significant difference between Bobcats \& Coyotes, as well as between
 Bobcats \& Gray Foxes, however, there is  no significant difference between Coyotes \& Gray Foxes. As a result, there is significant difference between 
-Bobcats \& Coyotes and Coyotes \& Gray Foxes.
+Bobcats \& Coyotes and Bobcats \& Gray Foxes.
 
 \subsubsection{\texttt{d15N} vs \texttt{scat\_species}}
 When we look at figure 25, and compare the three violin plots of Bobcat, Coyotes \& Gray Foxes, the medians of Bobcats \& Gray Foxes are the same, however
@@ -527,7 +546,7 @@ versus a categorical variable \texttt{scat\_flat}. After performing the chi-squa
 that we have rejected the null hypothesis and that there is an association between the two categorical variables. \\
 
 \noindent After performing the statistical testing, we moved on to performing a post-hoc test, where we used pair-wise chi-squared tests to find out which
-specfic groups have an association, and the results of the pairwise tests are shown below:
+specfic groups have an association, and the results of the pairwise tests are shown below: \\
 
 \begin{table}[h]
     \centering
@@ -557,6 +576,140 @@ we have accepted the null hypothesis in which there is no association at all bet
 
 \newpage
 
+\section{Discussion \& Interpretation}
+In this section, we discuss some of your findings and come to a final conclusion, as well as discuss any other pieces of relevant information. We start off
+by making a table of all traits that separate atleast one species from the rest. We use descriptive statistics to characterize the values for each species.
+Then, using our research, we explain how the traits with differences relate to differences in the biology of the three species. Lastly, we explain why we 
+think that predictive morphologicall and biogeochemical traits might be more useful than contextual traits to ecologists.
+
+\subsection{A Table of Traits that Separate Atleast One Species From the Rest}
+Here, we create a table of traits that separate atleast one species from the rest. We use the descriptive statistics to characterize the values for each 
+species: \\
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|c|c|c|c|c|}
+    \hline
+    \textbf{Statistic} & \textbf{scat\_diameter\_mm} & \textbf{scat\_mass\_grams} & \textbf{d13C} & \textbf{d15N} & \textbf{C:N Ratio} \\
+    \hline
+    Count & 57.000 & 57.000 & 57.000 & 57.000 & 57.000 \\
+    Mean & 19.009 & 12.482 & -27.695 & 6.391 & 6.716 \\
+    Std Dev & 2.947 & 6.535 & 1.036 & 1.797 & 1.096 \\
+    Min & 13.000 & 1.500 & -29.850 & 1.840 & 4.500 \\
+    25\% & 16.500 & 7.110 & -28.290 & 5.360 & 5.800 \\
+    50\% & 18.200 & 11.250 & -27.790 & 6.420 & 6.700 \\
+    75\% & 21.400 & 16.240 & -27.300 & 7.520 & 7.480 \\
+    Max & 25.800 & 26.890 & -24.550 & 11.270 & 10.400 \\
+    \hline
+    \end{tabular}
+    \caption{Summary statistics for Bobcat scat measurements}
+    \label{tab:bobcat_summary_stats}
+\end{table}
+
+\vspace{0.5cm}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|c|c|c|c|c|}
+    \hline
+    \textbf{Statistic} & \textbf{scat\_diameter\_mm} & \textbf{scat\_mass\_grams} & \textbf{d13C} & \textbf{d15N} & \textbf{C:N Ratio} \\
+    \hline
+    Count & 28.000 & 28.000 & 28.000 & 28.000 & 28.000 \\
+    Mean & 20.206 & 18.245 & -24.821 & 10.378 & 8.593 \\
+    Std Dev & 4.409 & 11.782 & 3.078 & 3.827 & 2.338 \\
+    Min & 11.000 & 0.940 & -29.620 & 3.970 & 4.900 \\
+    25\% & 17.600 & 9.210 & -27.310 & 7.740 & 7.000 \\
+    50\% & 20.650 & 16.750 & -25.420 & 8.915 & 7.700 \\
+    75\% & 23.250 & 24.180 & -22.453 & 13.223 & 9.800 \\
+    Max & 30.000 & 53.700 & -19.670 & 18.000 & 15.400 \\
+    \hline
+    \end{tabular}
+    \caption{Summary statistics for Coyote scat measurements}
+    \label{tab:coyote_summary_stats}
+\end{table}
+
+\vspace{0.5cm}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|c|c|c|c|c|}
+    \hline
+    \textbf{Statistic} & \textbf{scat\_diameter\_mm} & \textbf{scat\_mass\_grams} & \textbf{d13C} & \textbf{d15N} & \textbf{C:N Ratio} \\
+    \hline
+    Count & 25.000 & 25.000 & 25.000 & 25.000 & 25.000 \\
+    Mean & 15.688 & 5.801 & -27.288 & 6.481 & 11.926 \\
+    Std Dev & 3.211 & 3.409 & 1.128 & 1.715 & 5.588 \\
+    Min & 7.800 & 2.050 & -28.970 & 3.900 & 5.700 \\
+    25\% & 14.700 & 3.430 & -28.170 & 5.320 & 7.250 \\
+    50\% & 16.800 & 4.810 & -27.330 & 6.390 & 9.200 \\
+    75\% & 18.500 & 7.140 & -26.580 & 7.830 & 18.100 \\
+    Max & 19.100 & 18.140 & -25.180 & 10.100 & 23.600 \\
+    \hline
+    \end{tabular}
+    \caption{Summary statistics for Gray Fox scat measurements}
+    \label{tab:gray_fox_summary_stats}
+\end{table}
+
+\subsubsection{Characterizing \texttt{scat\_diameter\_mm}}
+When it comes to looking at \texttt{scat\_diameter\_mm}, we know that the scat diameter of Gray Foxes is different than the scat of both Coyotes and Bobcats.
+We can also look at some of the summary statistics. When we compare the mean, we can see that the Gray Fox has the lowest mean compared to the other two.
+As a result, this means on average that the diameter of the Gray Fox scat is the smallest. Moreover, when we compare the standard deviation, the Gray Fox has 
+a higher spread than the Bobcat scat diameter but lower than the Coyote scat diameter.
+
+\subsubsection{Characterizing \texttt{scat\_mass\_grams}}
+When it comes to looking at \texttt{scat\_mass\_grams}, we know that the scat mass of Gray Foxes is different than the scat mass of both Coyotes \& Bobcats.
+We can also look at some of the summary statistics. When we compare the mean, we can see that the Gray Fox has the lowest mean compared to the other two.
+As a result, this means on average that the mass of the Gray Fox scat is the smallest. Moreover, when we compare the standard deviation, the Gray Fox has
+the lowest spread and is more consistent than the Bobcat scat mass and Coyote scat mass.
+
+\subsubsection{Characterizing \texttt{d13C}}
+When it comes to looking at \texttt{d13C}, we know that the carbon composition of Bobcats is different that the carbon composition of both Coyotes \& Gray 
+Foxes. We can also look at some of the summary statistics. When we compare the mean, the bob cat has the lowest mean compared to the other two. As a result,
+this means on average that the carbon compositon is the lowest. Moreover, when we compare the standard deviation, the Gray Fox has the lowest standard 
+deviation, which means the carbon composition is more consistent than the carbon compostion of the either two scats.
+
+\subsubsection{Characterizing \texttt{d15N}}
+When it comes to looking at \texttt{d15N}, we know that the nitrogen composition of Coyotes is different than the nitrogen compositions of both Bobcats \& Gray
+Foxes. We can also look at some of the summary statistics. When we compare the mean, the Coyote has the highest mean compared to the other two. As a result,
+this means on average, the Coyote scat has the highest nitrogen composition. Moreover, when we compare the standard deviation, the Coyote has the highest
+standard deviation compared to the other two. A higher standard deviation means that the nitrogen composition values are more spread out than the other two.
+
+\subsubsection{Characterizing \texttt{C:N Ratio}}
+When it comes to looking at \texttt{C:N Ratio}, we know that the carbon-nitrogen ratio of Bobcats is different than both Coyotes and Gray Foxes. We can also
+look at some of the summary statistics. When we compare the mean, the Bobcats have the lowest mean, which means that on average the C:N ratio for Bobcat scat
+is lower than the C:N ratio ofr Gray Fox and Coyote scat. Moreover, when we compare the standard deviation, it seems that the Bobcat has the lowest standard
+deviation compared to the other two. A lower standard deviation means that the C:N ratio of Bobcat scat is consistent.
+
+\subsection{Correlating Traits with Biology}
+When it comes to correlating traits with biology, we can justify that the scat diamater and scat mass of Gray Foxes is the lowest simply because it has the 
+lowest mass. When it comes to the diet, such as carbon composition, the diet of a Bobcat is mostly of low carbon rich foods. For nitrogen composition, it can
+be explained by looking at the diet of a Coyote, which feeds mainly on meat as they are carnivores. This would make sense, as meat is rich in nitrogen.
+Lastly, when it comes to C:N ratio, the diet of a Bobcat is mostly food that is low in carbon and nitrogen.
+
+\subsection{Why Morphological and Biogeochemical Traits Are Useful}
+Morphological and Biogeochemical traits are useful to ecologists for a number of reasons. Firstly, they allow ecologists to differentiate scats and be able to 
+make correct assumptions about where the scat came from. From example, if they found a scat that was poor in Carbon, they could tell that it possibly came
+from a Bobcat, as they know for a fact that the diet of a Bobcat is very low in carbon. As a result, such morphological traits and biogeochemical traits are
+more useful than contextual traits, which can be difficult for ecologists to differentiate from. For example, the location of a scat being dropped on a 
+track doesn't tell a ecologist much about which species dropped the scat, as two scats from two different species can all be dropped on the same location, 
+however, those two scats will have different morphological and biogeochemical traits that will help the ecologist to identify who dropped the scat.
+
+\subsection{Was Our Hypothesis Correct?}
+Let's revisit the start of our paper. Earlier, we made a hypothesis listed as follows:
+\begin{itemize}
+    \item \textbf{Hypothesis: } Given that adult Gray Foxes have a greater average body length than adult Bobcats, and a smaller average body length than 
+    adult Coyotes, we hypothesize that Gray Fox scat will exhibit a significantly larger average diameter than Bobcat scat, but a smaller average diameter 
+    than Coyote scat.
+\end{itemize} 
+
+\noindent From our findings, we now know that Gray Fox scats have the lowest mean for scat diameter and scat mass. This may be directly linked to the gray fox having
+the lowest mass compared to the Bobcat \& Coyote. As a result, our hypothesis was wrong, as the body length may not have a correlation to the size of the
+scat itself.
+
+
+\newpage
+
+\renewcommand{\refname}{Bibliography}
 \begin{thebibliography}{99}
 
     \bibitem{bobcat} California Department of Fish and Wildlife. \textit{Bobcat}. Available at: \url{https://wildlife.ca.gov/Conservation/Mammals/Bobcat#574393461-bobcat-biology}. Accessed: 2025-03-17.
@@ -566,6 +719,11 @@ we have accepted the null hypothesis in which there is no association at all bet
     \bibitem{quadrat_transects_pitfall} Uyir. \textit{The Advantages and Disadvantages of Quadrats, Transects, and Pitfall Traps}. Available at: \url{https://www.uyir.at/explore-learn/eshaaan/the-advantages-and-disadvantages-of-quadrats-transects-and-pitfall-traps}. Accessed: 2025-03-17.
     \bibitem{tracking_wildlife} National Aquarium. \textit{Connecting the Dots: The Science of Tracking Wildlife}. Available at: \url{https://aqua.org/stories/2022-12-05-connecting-dots-the-science-of-tracking-wildlife}. Accessed: 2025-03-17.
     \bibitem{wlb_study} Wiley Online Library. \textit{Study on Wildlife Biology}. Available at: \url{https://nsojournals.onlinelibrary.wiley.com/doi/10.2981/wlb.00105}. Accessed: 2025-03-17.
+    \bibitem{bobcatPoop} A-Z Animals. \textit{Bobcat Poop: Facts About Bobcat Feces and What They Tell Us}. Available at: \url{https://a-z-animals.com/animals/bobcat/bobcat-facts/bobcat-poop/}. Accessed: 2025-03-18.
+    \bibitem{coyoteScat} Hawkeye. \textit{How to Identify Coyote Scat}. Available at: \url{https://www.hawkeye.ca/blog/how-to-identify-coyote-scat}. Accessed: 2025-03-18.
+    \bibitem{foxScat} Gray Bear Hunting. \textit{Identifying Fox Poop: A Clear Guide}. Available at: \url{https://graybearhunting.com/identifying-fox-poop-a-clear-guide/}. Accessed: 2025-03-18.
+    \bibitem{morphometricModeling} Reid, R. \textit{A Morphometric Modeling Approach to Distinguishing Among Bobcat, Coyote, and Gray Fox Scats}. \textit{Wildlife Biology}, 21(5). Available at: \url{https://bioone.org/journals/wildlife-biology/volume-21/issue-5/wlb.00105/A-morphometric-modeling-approach-to-distinguishing-among-bobcat-coyote-and/10.2981/wlb.00105.full}. Accessed: 2025-03-
+
 
 \end{thebibliography}
 

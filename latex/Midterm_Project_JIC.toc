@@ -1,38 +1,51 @@
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Background Information}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}The Research Questions}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}The Diet, Habitat \& Physical Characteristics of Bobcats}{2}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}The Diet, Habitat \& Physical Characteristics of Coyotes}{2}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}The Diet, Habitat \& Physical Characteristics of Gray Foxes}{2}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Population Estimation Methods for Conservation}{3}{subsection.1.6}%
-\contentsline {subsubsection}{\numberline {1.6.1}Mark \& Recapture Benefits and Drawbacks}{3}{subsubsection.1.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.2}Qudrants Benefits and Drawbacks}{3}{subsubsection.1.6.2}%
-\contentsline {subsubsection}{\numberline {1.6.3}Transects Benefits and Drawbacks}{3}{subsubsection.1.6.3}%
-\contentsline {subsection}{\numberline {1.7}Dataset Description}{3}{subsection.1.7}%
-\contentsline {section}{\numberline {2}Methods}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Data Type Conversion}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Imputing or Dropping?}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Visualization Tehcniques}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Statistical Testing Tehcniques}{4}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Family-Wise Error Rate}{4}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Results}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Histograms \& Boxplots}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}The Feature Description Table}{6}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Imputations of Missing Value}{6}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Method of Imputation for \texttt {scat\_diameter\_mm}}{6}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Method of Imputation for \texttt {scat\_taper\_mm}, \texttt {scat\_taper\_index}, \texttt {scat\_mass\_grams}, \texttt {d13C}, \texttt {d15N} \& \texttt {C:N Ratio}}{6}{subsubsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.4}Numerical Morphological Features Box Plots, Kruskal-Wallis \& Dunn Testing}{7}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}\texttt {scat\_diameter\_mm} vs \texttt {scat\_species}}{8}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}\texttt {scat\_length\_cm} vs \texttt {scat\_species}}{8}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}\texttt {scat\_mass\_grams} vs \texttt {scat\_species}}{8}{subsubsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.4}\texttt {scat\_taper\_mm} vs \texttt {scat\_species}}{9}{subsubsection.3.4.4}%
-\contentsline {subsubsection}{\numberline {3.4.5}\texttt {scat\_taper\_index} vs \texttt {scat\_species}}{9}{subsubsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.5}Numerical Biogeochemical Features Box Plots, Kruskal-Wallis \& Dunn Testing}{10}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}\texttt {d13C} vs \texttt {scat\_species}}{10}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}\texttt {d15N} vs \texttt {scat\_species}}{10}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}\texttt {C:N Ratio} vs \texttt {scat\_species}}{11}{subsubsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.6}Categorical Morphological Features Heat Maps, Chi-Squared Test \& Pairwise Chi-Squared Tests}{12}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}\texttt {scat\_ropey} vs \texttt {scat\_species}}{12}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}\texttt {scat\_segmented} vs \texttt {scat\_species}}{12}{subsubsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.3}\texttt {scat\_flat} vs \texttt {scat\_species}}{13}{subsubsection.3.6.3}%
-\contentsline {subsubsection}{\numberline {3.6.4}\texttt {scat\_scrape} vs \texttt {scat\_species}}{13}{subsubsection.3.6.4}%
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Background Information}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}The Research Questions}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}The Diet, Habitat \& Physical Characteristics of Bobcats}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}The Diet, Habitat \& Physical Characteristics of Coyotes}{3}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}The Diet, Habitat \& Physical Characteristics of Gray Foxes}{3}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Population Estimation Methods for Conservation}{4}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}Mark \& Recapture Benefits and Drawbacks}{4}{subsubsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.2}Qudrants Benefits and Drawbacks}{4}{subsubsection.1.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.3}Transects Benefits and Drawbacks}{4}{subsubsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.7}Dataset Description}{4}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Morphological \& Biogeochemical Traits of Bobcat Scat}{4}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Morphological \& Biogeochemical Traits of Coyote Scat}{4}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Morphological \& Biogeochemical Traits of Gray Fox Scat}{4}{subsection.1.10}%
+\contentsline {section}{\numberline {2}Methods}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Data Type Conversion}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Imputing or Dropping?}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Visualization Tehcniques}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Statistical Testing Tehcniques}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Family-Wise Error Rate}{5}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Results}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Histograms \& Boxplots}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}The Feature Description Table}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Imputations of Missing Value}{7}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Method of Imputation for \texttt {scat\_diameter\_mm}}{7}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Method of Imputation for \texttt {scat\_taper\_mm}, \texttt {scat\_taper\_index}, \texttt {scat\_mass\_grams}, \texttt {d13C}, \texttt {d15N} \& \texttt {C:N Ratio}}{7}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Numerical Morphological Features Box Plots, Kruskal-Wallis \& Dunn Testing}{8}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}\texttt {scat\_diameter\_mm} vs \texttt {scat\_species}}{9}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}\texttt {scat\_length\_cm} vs \texttt {scat\_species}}{9}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}\texttt {scat\_mass\_grams} vs \texttt {scat\_species}}{9}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}\texttt {scat\_taper\_mm} vs \texttt {scat\_species}}{10}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}\texttt {scat\_taper\_index} vs \texttt {scat\_species}}{10}{subsubsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.5}Numerical Biogeochemical Features Box Plots, Kruskal-Wallis \& Dunn Testing}{11}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}\texttt {d13C} vs \texttt {scat\_species}}{11}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}\texttt {d15N} vs \texttt {scat\_species}}{11}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}\texttt {C:N Ratio} vs \texttt {scat\_species}}{12}{subsubsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.6}Categorical Morphological Features Heat Maps, Chi-Squared Test \& Pairwise Chi-Squared Tests}{13}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}\texttt {scat\_ropey} vs \texttt {scat\_species}}{13}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}\texttt {scat\_segmented} vs \texttt {scat\_species}}{13}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}\texttt {scat\_flat} vs \texttt {scat\_species}}{14}{subsubsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.4}\texttt {scat\_scrape} vs \texttt {scat\_species}}{14}{subsubsection.3.6.4}%
+\contentsline {section}{\numberline {4}Discussion \& Interpretation}{15}{section.4}%
+\contentsline {subsection}{\numberline {4.1}A Table of Traits that Separate Atleast One Species From the Rest}{15}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Characterizing \texttt {scat\_diameter\_mm}}{15}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Characterizing \texttt {scat\_mass\_grams}}{15}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Characterizing \texttt {d13C}}{16}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Characterizing \texttt {d15N}}{16}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}Characterizing \texttt {C:N Ratio}}{16}{subsubsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.2}Correlating Traits with Biology}{16}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Why Morphological and Biogeochemical Traits Are Useful}{16}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Was Our Hypothesis Correct?}{16}{subsection.4.4}%
