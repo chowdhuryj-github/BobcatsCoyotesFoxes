@@ -26,19 +26,19 @@ As a result, these are the two research questions we look at:
 ## Data Visualization Techniques
 When it came to performing visualization techniques, we had to set a response variable, which was scat species. Given
 that the response variable was categorical, this means we performed our visualizations according to the following rules:
-- Categorical vs Numerical: for plotting a categorical feature against numerical features, we explored using either
+- **Categorical vs Numerical:** for plotting a categorical feature against numerical features, we explored using either
 box plots or violin plots
-- Categorical vs Categorical: for plotting a categorical feature against categorical features, we explored using
+- **Categorical vs Categorical:** for plotting a categorical feature against categorical features, we explored using
 heat maps
 The visualizations were performed as we compared the response variable against features from both morphological and
 biogeochemical traits.
 
 ## Statistical Testing Techniques
 When it came to performing statistical testing, we used our previously set response variable which was categorical against a number of categorical and numerical features, this means we performing our statistical testing according to the following rules:
-- Kruskal-Wallis: for comparing a categorical variable with multiple values against a numerical variable, it answers
+- **Kruskal-Wallis:** for comparing a categorical variable with multiple values against a numerical variable, it answers
 the question of whether atleast one group defined by the categorical variable differs from at-least one other.
-- Chi-Squared Test of Independence: it is a hypothesis test for comparing two categorical variables and measures whether there is a ’dependence’ between them
-- Dunn Testing: used as a post-hoc analysis after a Kruskal-Wallis test to identify which specific groups are significantly different from each other.
+- **Chi-Squared Test of Independence:** it is a hypothesis test for comparing two categorical variables and measures whether there is a ’dependence’ between them
+- **Dunn Testing:** used as a post-hoc analysis after a Kruskal-Wallis test to identify which specific groups are significantly different from each other.
 The statistical tests were performed as we compared the response variables against features from both morphological
 and biogeochemical traits. The justification for all statistical tests and visualizations were all dependent on the type of variable we were dealing against the response variabl
 
