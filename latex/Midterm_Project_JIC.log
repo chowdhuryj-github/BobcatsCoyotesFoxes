@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.26)  18 MAR 2025 21:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.26)  12 APR 2025 19:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -263,24 +263,24 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (Midterm_Project_JIC.aux)
 \openout1 = `Midterm_Project_JIC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
  (C:\Users\chowdhuryj\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count303
@@ -334,7 +334,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 16.
 (Midterm_Project_JIC.out) (Midterm_Project_JIC.out)
 \@outlinefile=\write3
 \openout3 = `Midterm_Project_JIC.out'.
@@ -350,17 +350,17 @@ Package hyperref Info: Link coloring OFF on input line 14.
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--34
+Underfull \hbox (badness 10000) in paragraph at lines 31--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--42
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
 
  []
 
@@ -374,82 +374,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--42
 <C:/GitHub/BobcatsCoyotesFoxes/plots/kde_missing.png, id=290, 888.07785pt x 821.2281pt>
 File: C:/GitHub/BobcatsCoyotesFoxes/plots/kde_missing.png Graphic file (type png)
 <use C:/GitHub/BobcatsCoyotesFoxes/plots/kde_missing.png>
-Package pdftex.def Info: C:/GitHub/BobcatsCoyotesFoxes/plots/kde_missing.png  used on input line 193.
+Package pdftex.def Info: C:/GitHub/BobcatsCoyotesFoxes/plots/kde_missing.png  used on input line 195.
 (pdftex.def)             Requested size: 330.90242pt x 305.99243pt.
 <C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_missing.png, id=292, 888.07785pt x 760.64175pt>
 File: C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_missing.png Graphic file (type png)
 <use C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_missing.png>
-Package pdftex.def Info: C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_missing.png  used on input line 198.
+Package pdftex.def Info: C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_missing.png  used on input line 200.
 (pdftex.def)             Requested size: 330.90242pt x 283.41774pt.
 
 
 [6 <C:/GitHub/BobcatsCoyotesFoxes/plots/kde_missing.png> <C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_missing.png>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 243.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 245.
 
 
 [7]
 <C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_morphological_one.png, id=305, 888.49942pt x 923.67082pt>
 File: C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_morphological_one.png Graphic file (type png)
 <use C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_morphological_one.png>
-Package pdftex.def Info: C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_morphological_one.png  used on input line 263.
+Package pdftex.def Info: C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_morphological_one.png  used on input line 265.
 (pdftex.def)             Requested size: 420.19191pt x 436.8314pt.
 
 
 [8 <C:/GitHub/BobcatsCoyotesFoxes/plots/box_plot_morphological_one.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 269--274
+Underfull \hbox (badness 10000) in paragraph at lines 271--276
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--279
+Underfull \hbox (badness 10000) in paragraph at lines 277--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--300
+Underfull \hbox (badness 10000) in paragraph at lines 299--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--307
+Underfull \hbox (badness 10000) in paragraph at lines 304--309
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--312
+Underfull \hbox (badness 10000) in paragraph at lines 310--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--318
+Underfull \hbox (badness 10000) in paragraph at lines 316--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--323
+Underfull \hbox (badness 10000) in paragraph at lines 321--325
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--326
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
 
 
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 349--353
+Underfull \hbox (badness 10000) in paragraph at lines 351--355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--364
+Underfull \hbox (badness 10000) in paragraph at lines 362--366
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--369
+Underfull \hbox (badness 10000) in paragraph at lines 367--371
 
  []
 
@@ -459,52 +459,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--369
 <C:/GitHub/BobcatsCoyotesFoxes/plots/violin_plot_biogeochemical.png, id=321, 1064.778pt x 646.8165pt>
 File: C:/GitHub/BobcatsCoyotesFoxes/plots/violin_plot_biogeochemical.png Graphic file (type png)
 <use C:/GitHub/BobcatsCoyotesFoxes/plots/violin_plot_biogeochemical.png>
-Package pdftex.def Info: C:/GitHub/BobcatsCoyotesFoxes/plots/violin_plot_biogeochemical.png  used on input line 379.
+Package pdftex.def Info: C:/GitHub/BobcatsCoyotesFoxes/plots/violin_plot_biogeochemical.png  used on input line 381.
 (pdftex.def)             Requested size: 420.19191pt x 255.25778pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--389
+Underfull \hbox (badness 10000) in paragraph at lines 387--391
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--394
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--397
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--424
+Underfull \hbox (badness 10000) in paragraph at lines 422--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--429
+Underfull \hbox (badness 10000) in paragraph at lines 427--431
 
  []
 
 
 
 [11 <C:/GitHub/BobcatsCoyotesFoxes/plots/violin_plot_biogeochemical.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 430--432
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--459
+Underfull \hbox (badness 10000) in paragraph at lines 457--461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--464
+Underfull \hbox (badness 10000) in paragraph at lines 462--466
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--467
+Underfull \hbox (badness 10000) in paragraph at lines 467--469
 
  []
 
@@ -514,64 +514,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 465--467
 <C:/GitHub/BobcatsCoyotesFoxes/plots/heat_map_morphological_two.png, id=334, 1041.1698pt x 639.3486pt>
 File: C:/GitHub/BobcatsCoyotesFoxes/plots/heat_map_morphological_two.png Graphic file (type png)
 <use C:/GitHub/BobcatsCoyotesFoxes/plots/heat_map_morphological_two.png>
-Package pdftex.def Info: C:/GitHub/BobcatsCoyotesFoxes/plots/heat_map_morphological_two.png  used on input line 497.
+Package pdftex.def Info: C:/GitHub/BobcatsCoyotesFoxes/plots/heat_map_morphological_two.png  used on input line 499.
 (pdftex.def)             Requested size: 472.71088pt x 290.26994pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--504
+Underfull \hbox (badness 10000) in paragraph at lines 503--506
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--508
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--513
+Underfull \hbox (badness 10000) in paragraph at lines 512--515
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--517
+Underfull \hbox (badness 10000) in paragraph at lines 516--519
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--520
+Underfull \hbox (badness 10000) in paragraph at lines 520--522
 
  []
 
 
 
 [13 <C:/GitHub/BobcatsCoyotesFoxes/plots/heat_map_morphological_two.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 541--543
+Underfull \hbox (badness 10000) in paragraph at lines 543--545
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--547
+Underfull \hbox (badness 10000) in paragraph at lines 546--549
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--550
+Underfull \hbox (badness 10000) in paragraph at lines 550--552
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--572
+Underfull \hbox (badness 10000) in paragraph at lines 572--574
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 573--576
+Underfull \hbox (badness 10000) in paragraph at lines 575--578
 
  []
 
 
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 586--588
+Underfull \hbox (badness 10000) in paragraph at lines 588--590
 
  []
 
@@ -580,32 +580,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 586--588
 [15]
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 716--717
+Underfull \hbox (badness 10000) in paragraph at lines 718--719
 \OT1/cmtt/m/n/10 learning / nature-[]science / ?cid = FSBDEV3 _ 004458# : [] : text = The % 20diet % 20of % 20the % 20coyote ,[] sheep % 2C %
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 718--719
+Underfull \hbox (badness 2418) in paragraph at lines 720--721
 []\OT1/cmr/m/n/10 LibreTexts. \OT1/cmr/m/it/10 Pop-u-la-tion Ecol-ogy Re-search Meth-ods\OT1/cmr/m/n/10 . Avail-able at: []$\OT1/cmtt/m/n/10 https : / / bio . libretexts . org / Courses /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
 \OT1/cmtt/m/n/10 Gettysburg _ College / 01 % 3A _ Ecology _ for _ All / 09 % 3A _ The _ Ecology _ of _ Populations / 9 . 02 % 3A _ Population _
  []
 
 
-Overfull \hbox (38.59084pt too wide) in paragraph at lines 719--720
+Overfull \hbox (38.59084pt too wide) in paragraph at lines 721--722
 \OT1/cmtt/m/n/10 uyir . at / explore-[]learn / eshaaan / the-[]advantages-[]and-[]disadvantages-[]of-[]quadrats-[]transects-[]and-[]pitfall-[]traps$[]\OT1/cmr/m/n/10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
+Underfull \hbox (badness 10000) in paragraph at lines 725--726
 []\OT1/cmr/m/n/10 Hawkeye. \OT1/cmr/m/it/10 How to Iden-tify Coy-ote Scat\OT1/cmr/m/n/10 . Avail-able at: []$\OT1/cmtt/m/n/10 https : / / www . hawkeye . ca / blog /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
 \OT1/cmtt/m/n/10 wlb . 00105 / A-[]morphometric-[]modeling-[]approach-[]to-[]distinguishing-[]among-[]bobcat-[]coyote-[]and / 10 . 2981 /
  []
 
@@ -628,7 +628,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,10n,79p,707b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\chowdhuryj\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/chowdhuryj/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Midterm_Project_JIC.pdf (17 pages, 4372824 bytes).
+Output written on Midterm_Project_JIC.pdf (17 pages, 4372688 bytes).
 PDF statistics:
  463 PDF objects out of 1000 (max. 8388607)
  93 named destinations out of 1000 (max. 500000)
