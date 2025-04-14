@@ -1,4 +1,4 @@
-<img src="assets/Bobcats.png" alt="Banner" style="width:100%;"/>
+<img src="assets/banner_final.png" alt="Banner" style="width:100%;"/>
 
 <br>
 
