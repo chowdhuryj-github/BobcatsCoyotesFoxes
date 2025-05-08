@@ -5,7 +5,7 @@
 <br>
 
 # BobcatsCoyotesFoxes
-A MSOE midterm project that focuses on applying data science techniques by analyzing a dataset from a biology research paper. This project determines the best approach for addressing research questions. Details about the paper
+A project that focuses on applying data science techniques by analyzing a dataset from a biology research paper. This project determines the best approach for addressing research questions. Details about the paper
 can be read below:
 
 [View Midterm Paper](latex/Midterm_Project_JIC.pdf)
