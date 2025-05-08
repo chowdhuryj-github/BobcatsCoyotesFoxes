@@ -1,4 +1,5 @@
-<img src="assets/banner_final.png" alt="Banner" style="width:100%;"/>
+
+![Bobcats Demo](assets/bobcats.gif)
 
 <br>
 
