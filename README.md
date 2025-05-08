@@ -1,5 +1,6 @@
 
-![Bobcats Demo](assets/bobcats.gif)
+
+![Bobcats](assets/bobcats.gif)
 
 <br>
 
